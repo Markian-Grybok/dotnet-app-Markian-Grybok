@@ -1,3 +1,4 @@
+[![.NET_GA](https://github.com/Markian-Grybok/dotnet-app-Markian-Grybok/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Markian-Grybok/dotnet-app-Markian-Grybok/actions/workflows/dotnet.yml)
 # Description
 This project is the .Net backend part of an educational  project. It provides connection to DB, implements CRUD operations and sends responses to requests. 
 
