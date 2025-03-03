@@ -5,11 +5,17 @@ name: .NET_GA
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - new_branche
     
   pull_request:
-    branches: [ "main" ]
-    types: [opened, synchronize]
+    branches:
+      - main
+      - new_branche
+    types:
+      - opened
+      - synchronize
     
   workflow_dispatch:
 
@@ -21,7 +27,9 @@ jobs:
     steps:
     - name: Clone Repository
       uses: actions/checkout@v4
-      
+      with:
+        ref: new_branche
+        
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
